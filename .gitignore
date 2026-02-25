@@ -2,6 +2,8 @@
 .venv
 .env
 
+__pycache__/
+
 Healthcare_MultiAgent_System/
 Personal_Agent/
 session_and_memory/
