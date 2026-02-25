@@ -1,0 +1,15 @@
+.vscode
+.venv
+.env
+
+Healthcare_MultiAgent_System/
+Personal_Agent/
+session_and_memory/
+Agentic_RAG_System/
+Testing/
+Travel_Planning_Agent/
+requirements.txt
+
+
+
+
