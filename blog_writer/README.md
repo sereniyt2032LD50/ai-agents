@@ -7,7 +7,10 @@ A multi-agent blog assistant that writes an seo optimized article with the possi
 #### Installation
 Create and activate a virtual environment using uv or other 
 
-`                                         `
+``` 
+pip create -m venv 
+venv/scripts/activate
+```
 #### Project Setup
 
 `  pip install requirements.txt                              `
@@ -18,20 +21,21 @@ Run the agent in an interactive manner or using the the CLI
 ```
 adk web 
 adk run blog_assistant_agent
-
 ```
 #### Project Structure
 
-blog_assistant_agent/: The main python package for the agent 
-    agent.py : Defines the main agents and orchestrates the subagents
-    subagents/ : Contains the subagents responsible for specific tasks
-        strategist/ : Generates the blog outline and content plan
-        author/ : Writes the article
-        editor/ : Edits the article based on user feedback
-        publisher/ : Generates the LinkedIn and Blog versions
-    tools.py : Defines the custom tools used by the different agents
+- `blog_assistant_agent/`: The main python package for the agent 
+    - `agent.py` : Defines the main agents and orchestrates the subagents
+    - `subagents/ `: Contains the subagents responsible for specific tasks
+        - `strategist/ `: Generates the blog outline and content plan
+        - `author/ `: Writes the seo optimized article
+        - `editor/ `: Edits the article based on user feedback
+        - `publisher/ `: Generates the LinkedIn and Blog versions of the article
+    - `tools.py `: Defines the custom tools used by the different agents
 
 #### Agent Architecture 
+
+![Blog Writer Agent](./assets/Agent_architecture.png)
 
 #### Workflow 
 The Workflow is as follows:
